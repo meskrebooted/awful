@@ -1,2 +1,2 @@
-# awful
-Es 6 Informatica
+# Inserisci i tuoi dati 😉
+
