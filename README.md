@@ -1,2 +1,2 @@
-# Inserisci i tuoi dati 😉
+# Inserisci i tuoi dati 😉 (Es 6 Info)
 
