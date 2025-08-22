@@ -1,0 +1,145 @@
+body {
+    background: #fff url('bg.jpg') center center / cover no-repeat fixed;
+    color: #222;
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+h1 {
+    text-align: center;
+    margin-top: 20px;
+    color: #222;
+}
+.container {
+    max-width: 500px;
+    margin: 40px auto;
+    padding: 30px;
+    background: #fff;
+    border-radius: 18px;
+    box-shadow: 0 0 30px #0002;
+}
+h2 {
+    text-align: center;
+    margin-top: 30px;
+    color: #222;
+}
+.input-area, .wheel-area, .solar-area {
+    margin: 30px 0;
+    text-align: center;
+}
+.letters {
+    font-size: 2.5rem;
+    letter-spacing: 0.5em;
+    margin-bottom: 20px;
+    min-height: 2.5rem;
+}
+.selected {
+    color: #ffd700;
+}
+.btn {
+    padding: 10px 24px;
+    font-size: 1.2rem;
+    border-radius: 8px;
+    border: none;
+    background: #ffd700;
+    color: #222;
+    cursor: pointer;
+    margin: 10px;
+    transition: background 0.2s;
+}
+.btn:active {
+    background: #ffb300;
+}
+.wheel {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    border: 6px solid #ffd700;
+    position: relative;
+    margin: 0 auto 20px auto;
+    background: #fff;
+    box-shadow: 0 0 20px #ffd70044;
+    overflow: hidden;
+}
+.wheel span {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.3rem;
+    color: #222;
+    transition: font-size 0.2s, color 0.2s;
+    pointer-events: none;
+}
+.wheel .selected {
+    font-size: 2.5rem;
+    color: #ffd700;
+    z-index: 2;
+}
+.output {
+    margin-top: 20px;
+    font-size: 1.3rem;
+    min-height: 1.3rem;
+}
+#solar-canvas {
+    background: #111;
+    border-radius: 30px;
+    box-shadow: 0 0 30px #000a;
+    display: block;
+    margin: 0 auto;
+    border: 2px solid #ffd700;
+}
+.confirmed {
+    background: #eee;
+}
+.confirmed *:not(.btn) {
+    pointer-events: none;
+    color: #888 !important;
+}
+.confirmed .btn,
+.confirmed .btn:disabled {
+    opacity: 1;
+    background: #ffffff;
+    pointer-events: auto;
+    filter: none;
+}
+.modal-overlay {
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: #fff;
+    opacity: 0.98;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.modal-window {
+    background: #ffffff;
+    border-radius: 18px;
+    box-shadow: 0 0 30px #0003;
+    padding: 30px 40px;
+    text-align: center;
+    z-index: 101;
+    position: relative;
+}
+#modal-data {
+    margin: 20px 0;
+    font-size: 1.2rem;
+}
+#modal-yes {
+    transition: left 0.2s, top 0.2s;
+}
+.finish-btn {
+    background: #2ecc40;
+    color: #fff;
+    font-weight: bold;
+    margin-top: 30px;
+    font-size: 1.2rem;
+    padding: 12px 32px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+.finish-btn:active {
+    background: #27ae36;
+}

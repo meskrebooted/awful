@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <title>Inserisci i tuoi dati</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+</head>
+<body>
+ 
+    <div class="container">
+           <h1>Inserisci i tuoi dati</h1>
+        <h2>Nome</h2>
+        <div class="input-area" id="name-area">
+            <div class="letters" id="letters"></div>
+            <button class="btn" id="select-letter">Seleziona lettera</button>
+            <button class="btn" id="del-letter">Elimina lettera</button>
+            <div class="output" id="name-output"></div>
+            <button class="btn" id="confirm-name">Conferma Nome</button>
+        </div>
+        <h2>Cognome</h2>
+        <div class="wheel-area" id="surname-area">
+            <div class="wheel" id="wheel"></div>
+            <button class="btn" id="spin-wheel">Gira la ruota</button>
+            <button class="btn" id="del-surname-letter">Elimina lettera</button>
+            <div class="output" id="surname-output"></div>
+            <button class="btn" id="confirm-surname">Conferma Cognome</button>
+        </div>
+        <h2>Data di nascita</h2>
+        <div class="solar-area">
+            <canvas id="solar-canvas" width="400" height="200"></canvas>
+            <div class="output" id="date-output"></div>
+            <button class="btn" id="confirm-date">Conferma Data</button>
+        </div>
+        <div style="text-align:center; margin-top:40px;">
+            <button class="btn finish-btn" id="finish-btn">Fine</button>
+        </div>
+        <div class="modal-overlay" id="modal-overlay" style="display:none;">
+            <div class="modal-window" id="modal-window">
+                <h3>Dati confermati</h3>
+                <div id="modal-data"></div>
+                <button class="btn" id="modal-yes">Sì</button>
+                <button class="btn" id="modal-no">No</button>
+            </div>
+        </div>
+        <div class="modal-overlay" id="thanks-overlay" style="display:none;">
+            <div class="modal-window">
+                <h3>Grazie delle tue informazioni!</h3>
+                <p>Tra pochi istanti troverai un malware sul tuo pc, non puoi scappare. Buona fortuna!</p>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
